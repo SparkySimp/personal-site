@@ -1,0 +1,82 @@
+/* by default, use OpenDyslexic font */
+body {
+  font-family: "OpenDyslexic", sans-serif;
+}
+
+.mathml-equation {
+  color: #333;
+}
+
+.mathml-equation .cos,
+.mathml-equation .sin {
+  color: blue;
+}
+
+.mathml-equation .m,
+.mathml-equation .q {
+  color: green;
+}
+
+.mathml-equation .k {
+  color: red;
+}
+
+@media (prefers-color-scheme: dark) {
+  .mathml-equation {
+    color: #eee;
+  }
+
+  .mathml-equation .cos,
+  .mathml-equation .sin {
+    color: #79a;
+  }
+
+  .mathml-equation .m,
+  .mathml-equation .q {
+    color: #8ee;
+  }
+
+  .mathml-equation .k {
+    color: #f96;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .use-opendyslexic {
+    font-family: 'OpenDyslexic' !important;
+  }
+
+  /*links except those in the navbar */
+  a:not(.navbar-brand):not(.nav-link) {
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    /* dashed outline for accessibility purposes*/
+    border: 1px dashed white !important;
+  }
+
+  a:hover {
+    background-color: black !important;
+    color: white !important;
+    border: 1px dashed white !important;
+  }
+}
+
+@media screen and (prefers-color-scheme: light) {
+  .use-opendyslexic {
+    font-family: 'OpenDyslexic' !important;
+  }
+
+  /*links except those in the navbar */
+  a:not(.navbar-brand):not(.nav-link) {
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    /* dashed outline for accessibility purposes*/
+    border: 1px dashed black !important;
+  }
+
+  a:hover {
+    background-color: white !important;
+    color: black !important;
+    border: 1px dashed black !important;
+  }
+}
