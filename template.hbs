@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Begin OpenGraph Meta Tags -->
+    <meta property="og:title" content="Sparky's Hellpot" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yigitovski.com/" />
+    <meta property="og:image" content="https://yigitovski.com/assets/img/catgirl_on_plural_flag.jpg" />
+    <meta property="og:description" content="The list of stubs that we may or may not consider completing" />
+    <!-- End OpenGraph Meta Tags -->
+    <title>The Git Shitposts Showcase - Namsis Collective</title>
+    <!-- Import Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Import FontAwesome -->
+    <link rel="stylesheet" href="https://yigitovski.com/assets/fontawesome-free-6.5.1-web/css/all.min.css">
+    <!-- End Import FontAwesome -->
+
+    <!-- Import OpenDyslexic -->
+    <link rel="stylesheet" href="https://yigitovski.com/assets/fonts/font-declaration.css">
+    <!-- End Import OpenDyslexic -->
+
+    <!-- Import User Defined CSS -->
+    <link rel="stylesheet" href="https://yigitovski.com/personal-site/style/style.css">
+    <!-- End Import User Defined CSS -->
+    <link rel="shortcut icon" href="assets/img/fanart-cemal.ico" type="image/x-icon">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+</head>
+
+<body data-bs-theme="dark">
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg bg-body-teritary">
+                    <a class="nav-header mx-2" href="#">
+                        <a class="navbar-brand" href="#">
+                            <img class="img-fluid rounded-circle" src="assets/img/catgirl_on_plural_flag.jpg"
+                                alt="Sparky's Hellpot" width="50" height="50">
+                        </a>
+                    </a>
+                    <a class="nav-link mx-2 p-1" href="#"><i class="fa-solid fa-house"></i><span
+                            class="use-opendyslexic">Home</span></a>
+                    <a class="nav-link mx-2 p-1" href="#projects"><i class="fa-solid fa-diagram-project"></i><span
+                            class="use-opendyslexic">Projects</span></a>
+                    <a class="nav-link mx-2 p-1" href="#contact"><i class="fa-solid fa-id-card"></i><span
+                            class="use-opendyslexic">Contact</span></a>
+                    <a href="https://github.com/SparkySimp" class="nav-link p-1"><i
+                            class="fa-solid fa-code-branch"></i><span class="use-opendyslexic">GitHub</span></a>
+
+                </nav>
+            </div>
+            <main>
+                <div class="row-my-3">
+                    <div class="col-md-12">
+                        <h1 class="display-1">{{page.title}}</h1>
+                        <p class="lead">{{page.subtitle}}</p>
+                    </div>
+                </div>
+                <!-- for each row in the page -->
+                {{#each page.rows}}
+                <div class="row my-3">
+                    <div class="col-md-12">
+                        <h2>{{this.title}}</h2>
+                        <p>{{this.description}}</p>
+                        {{{this.content}}}
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- Import Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js">
+    </script>
+</body>
+
+</html>

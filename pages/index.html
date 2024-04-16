@@ -6,6 +6,7 @@
 <!-- COPILOT DIRECTIVE: styles are under style/ -->
 <!-- COPILOT DIRECTIVE: this site uses Bootstrap -->
 <!-- And if this is visible it means Plesk is distributing everything perfectly! Paru! -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -115,7 +116,7 @@
         <div class="row my-3 justify-content-center use-opendyslexic">
             <div class="col-md-12">
                 <h2 id="contact">Contact</h2>
-                <div class="row my-3">    
+                <div class="row my-3">
                     <div class="card">
                         <div class="card-body">
                             <!-- Card Picture -->
@@ -126,9 +127,10 @@
                             <!-- Contact info section, use cards -->
                             <p class="card-text">Feel free to reach out to me:</p>
                             <ul>
-                                <li class="my-3">Email: <a href="mailto:info@yitovski.com" class="px-1">info@yigitovski.com</a></li>
-                                <li class="my-3">Fediverse: <a href="https://shonk.social/@Sparky"
-                                        class="px-1">@Sparky@shonk.social</a>
+                                <li class="my-3">Email: <a href="mailto:info@yitovski.com"
+                                        class="px-1">info@yigitovski.com</a></li>
+                                <li class="my-3">Fediverse: <a href="https://the.gayest.dev/@Sparky"
+                                        class="px-1">@Sparky@the.gayest.dev</a>
                                 </li>
                                 <li class="my-3">Matrix: <a href="https://matrix.to/#/@sparky:platypus-sandbox.com"
                                         class="px-1">@sparky:platypus-sandbox.com</a></li>
@@ -139,13 +141,15 @@
                 <div class="row my-3">
                     <div class="card">
                         <div class="card-body">
-                            <img src="assets/img/jpg/catgirl_on_pangender_flag.jpg" alt="Efi" class="img-fluid rounded-circle">
+                            <img src="assets/img/jpg/catgirl_on_pangender_flag.jpg" alt="Efi"
+                                class="img-fluid rounded-circle">
                             <h5 class="card-title">Efi</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Systems Administrator</h6>
                             <p class="card-text">Efi is the systems administrator of this hellpot. You can reach out to
                                 them:</p>
                             <ul>
-                                <li class="my-3">Email: <a href="mailto:efi@yigitovski.com" class="px-1">efi@yigitovski.com</a></li>
+                                <li class="my-3">Email: <a href="mailto:efi@yigitovski.com"
+                                        class="px-1">efi@yigitovski.com</a></li>
                                 <li class="my-3">Fediverse: <a href="https://the.gayest.dev/@EfiSel"
                                         class="px-1">@EfiSel@the.gayest.dev</a></li>
                             </ul>
@@ -160,10 +164,12 @@
                             <h6 class="card-subtitle mb-2 text-muted">Systems Programmer</h6>
                             <p class="card-text">Secondary host</p>
                             <ul>
-                                <li class="my-3">Email: <a href="mailto:admin@yigitovski.com" class="px-1">admin@yigitovski.com</a></li>
+                                <li class="my-3">Email: <a href="mailto:admin@yigitovski.com"
+                                        class="px-1">admin@yigitovski.com</a></li>
                                 <li class="my-3">Fediverse: <a href="https://ak.vern.cc/cemaly"
                                         class="px-1">@cemaly@ak.vern.cc</a></li>
-                                <li class="my-3">Matrix: <a href="https://matrix.to/#/@cemaly:vern.cc">@cemaly:vern.cc</a></li>
+                                <li class="my-3">Matrix: <a
+                                        href="https://matrix.to/#/@cemaly:vern.cc">@cemaly:vern.cc</a></li>
                             </ul>
                         </div>
                     </div>
@@ -177,7 +183,17 @@
     <!-- Import MathJax -->
     <!-- End Import MathJax -->
     <!-- Import User Defined JavaScript -->
-    <script src="scripts/index.js"></script>
+    <script>
+        document.onload = function (e) {
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                // set the data-bs-theme attribute to dark
+                document.documentElement.setAttribute('data-bs-theme', 'dark');
+            } else {
+                // set the data-bs-theme attribute to light
+                document.documentElement.setAttribute('data-bs-theme', 'light');
+            }
+        }
+    </script>
     <!-- End Import User Defined JavaScript-->
 </body>
 
